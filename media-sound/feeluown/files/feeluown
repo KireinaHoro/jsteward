@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+python -c 'from feeluown import __main__ as fu;fu.main()' \"\$@\"
