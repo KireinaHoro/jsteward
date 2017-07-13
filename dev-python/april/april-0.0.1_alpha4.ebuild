@@ -11,7 +11,7 @@ DESCRIPTION="Simplified data deserialization"
 HOMEPAGE="https://github.com/cosven/april"
 
 MY_PV="0.0.1a4"
-SRC_URI="https://files.pythonhosted.org/packages/source/a/${PN}/${PN}-${MY_PV}.tar.gz"
+SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${PN}-${MY_PV}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -21,6 +21,6 @@ IUSE=""
 S=${WORKDIR}/${PN}-${MY_PV}
 
 DEPEND="
-	dev-python/pytest-runner
+	dev-python/pytest-runner[${PYTHON_USEDEP}]
 "
 RDEPEND="${DEPEND}"
