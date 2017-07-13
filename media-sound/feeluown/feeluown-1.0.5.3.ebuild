@@ -26,10 +26,10 @@ DEPEND="
 	dev-python/requests[${PYTHON_USEDEP}]
 	dev-qt/qtmultimedia:5[alsa,gstreamer,pulseaudio]
 	dev-qt/qtwebkit:5
-	media-libs/gst-plugins-bad
-	media-libs/gst-plugins-good
-	media-libs/gst-plugins-soup
-	media-libs/gst-plugins-ugly
+	media-libs/gst-plugins-bad:1.0
+	media-libs/gst-plugins-good:1.0
+	media-libs/gst-plugins-soup:1.0
+	media-libs/gst-plugins-ugly:1.0
 "
 RDEPEND="${DEPEND}
 "
