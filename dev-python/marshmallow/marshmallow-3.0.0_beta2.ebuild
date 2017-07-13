@@ -21,8 +21,8 @@ IUSE="test"
 S="${WORKDIR}/${PN}-${MY_PV}"
 
 DEPEND="
-	test? ( 
-		dev-python/pytest[${PYTHON_USEDEP}] 
+	test? (
+		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytz[${PYTHON_USEDEP}]
 		dev-python/simplejson[${PYTHON_USEDEP}]
 		>=dev-python/tox-1.5.0[${PYTHON_USEDEP}]

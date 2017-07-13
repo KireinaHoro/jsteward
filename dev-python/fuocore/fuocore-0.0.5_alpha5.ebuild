@@ -31,7 +31,7 @@ DEPEND="
 	>=dev-python/requests-2.13.0[${PYTHON_USEDEP}]
 	>=media-libs/mutagen-1.37[${PYTHON_USEDEP}]
 	media-video/mpv[libmpv]
-	test? ( 
+	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/mock[${PYTHON_USEDEP}]
 		dev-python/flake8[${PYTHON_USEDEP}]
