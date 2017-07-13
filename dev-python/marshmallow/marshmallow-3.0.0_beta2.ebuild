@@ -20,7 +20,8 @@ IUSE="test"
 
 S="${WORKDIR}/${PN}-${MY_PV}"
 
-DEPEND="
+RDEPEND=""
+DEPEND="${RDEPEND}
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytz[${PYTHON_USEDEP}]
@@ -28,7 +29,6 @@ DEPEND="
 		>=dev-python/tox-1.5.0[${PYTHON_USEDEP}]
 	)
 "
-RDEPEND="${DEPEND}"
 
 python_test() {
 	pytest -v || die "test failed with ${EPYTHON}"

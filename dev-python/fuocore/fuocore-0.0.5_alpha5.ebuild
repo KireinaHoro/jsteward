@@ -18,7 +18,7 @@ SLOT="0"
 KEYWORDS="~x86"
 IUSE="test"
 
-DEPEND="
+RDEPEND="
 	dev-python/aiozmq[${PYTHON_USEDEP}]
 	>=dev-python/april-0.0.1_alpha4[${PYTHON_USEDEP}]
 	>=dev-python/beautifulsoup-4.5.3[${PYTHON_USEDEP}]
@@ -26,18 +26,19 @@ DEPEND="
 	>=dev-python/marshmallow-2.13.5[${PYTHON_USEDEP}]
 	dev-python/msgpack[${PYTHON_USEDEP}]
 	>=dev-python/pycrypto-2.6.1[${PYTHON_USEDEP}]
-	dev-python/pytest-runner[${PYTHON_USEDEP}]
 	>=dev-python/python-levenshtein-0.12.0[${PYTHON_USEDEP}]
 	>=dev-python/requests-2.13.0[${PYTHON_USEDEP}]
 	>=media-libs/mutagen-1.37[${PYTHON_USEDEP}]
 	media-video/mpv[libmpv]
+"
+DEPEND="${RDEPEND}
+	dev-python/pytest-runner[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/mock[${PYTHON_USEDEP}]
 		dev-python/flake8[${PYTHON_USEDEP}]
 	)
 "
-RDEPEND="${DEPEND}"
 
 S="${WORKDIR}/${PN}-${MY_PV}"
 
