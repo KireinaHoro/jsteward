@@ -16,7 +16,7 @@ SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${PN}-${MY_PV}.tar.gz"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~x86"
-IUSE="vlc"
+IUSE=""
 
 DEPEND="
 	dev-python/beautifulsoup:4[${PYTHON_USEDEP}]
@@ -32,7 +32,6 @@ DEPEND="
 	media-libs/gst-plugins-ugly
 "
 RDEPEND="${DEPEND}
-	vlc? ( media-video/vlc )
 "
 
 S="${WORKDIR}/${PN}-${MY_PV}"
