@@ -11,6 +11,7 @@ HOMEPAGE="http://pypi.python.org/pypi/quamash"
 
 MY_P="Quamash"
 SRC_URI="https://pypi.python.org/packages/51/a3/dbead5b502aebc840c3672fc5e8ec7ecb2ea443d3e8638d14996600cd1cd/Quamash-0.5.5.zip"
+#SRC_URI="mirror://pypi/${MY_P:0:1}/${MY_P}/${MY_P}-${PV}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
