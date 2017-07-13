@@ -37,8 +37,9 @@ RDEPEND="${DEPEND}
 
 S="${WORKDIR}/${PN}-${MY_PV}"
 
-src_install() {
-	distutils-r1_python_install
+python_install_all() {
+	distutils-r1_python_install_all
+
 	rm -f ${ED}/usr/bin/feeluown-{install-dev,genicon,update} || die "failed to remove arbitrary scripts!"
 
 	domenu ${FILESDIR}/${MY_P}.desktop
