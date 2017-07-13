@@ -28,6 +28,7 @@ DEPEND="
 	dev-qt/qtwebkit:5
 	media-libs/gst-plugins-bad
 	media-libs/gst-plugins-good
+	media-libs/gst-plugins-soup
 	media-libs/gst-plugins-ugly
 "
 RDEPEND="${DEPEND}
