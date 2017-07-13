@@ -11,7 +11,7 @@ DESCRIPTION="Extensible music player with batteries included"
 HOMEPAGE="https://github.com/cosven/feeluown-core"
 
 MY_PV="0.0.5a5"
-SRC_URI="mirror://pypi/f/${PN}/${PN}-${MY_PV}.tar.gz"
+SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${PN}-${MY_PV}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -40,3 +40,7 @@ DEPEND="
 RDEPEND="${DEPEND}"
 
 S="${WORKDIR}/${PN}-${MY_PV}"
+
+python_test() {
+	esetup.py test
+}
