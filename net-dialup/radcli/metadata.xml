@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<upstream>
+		<bugs-to>https://github.com/radcli/radcli/issues</bugs-to>
+		<doc>http://radcli.github.io/radcli/</doc>
+	</upstream>
+	<maintainer type="person">
+		<email>i@jsteward.moe</email>
+		<name>KireinaHoro</name>
+	</maintainer>
+	<longdescription lang="en">
+		The radcli library is a library for writing RADIUS Clients. The library's approach is to allow writing RADIUS-aware application in less than 50 lines of C code. It was based originally on freeradius-client and radiusclient-ng and is source compatible with them.
+	</longdescription>
+	<use>
+		<flag name="nettle">Use <pkg>dev-libs/nettle</pkg> for md5 support</flag>
+	</use>
+</pkgmetadata>
