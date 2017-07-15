@@ -1,0 +1,33 @@
+#!/sbin/openrc-run
+# Copyright 1999-2015 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+
+OC_CONFIG="/etc/ocserv/ocserv.conf"
+
+OC_PIDFILE="/run/ocserv.pid"
+
+extra_commands="reload"
+
+reload() {
+    ebegin "Reloading configuration of OpenConnect SSL VPN server"
+    /usr/bin/occtl reload
+    eend $?
+}
+
+depend() {
+    need net
+}
+
+start() {
+    ebegin "Starting OpenConnect SSL VPN server"
+    start-stop-daemon --start --exec /usr/sbin/ocserv \
+    --foreground --config ${OC_CONFIG} --pid-file ${OC_PIDFILE} >/dev/null 2>&1 &
+    eend $?
+}
+
+stop() {
+    ebegin "Stopping OpenConnect SSL VPN server"
+    start-stop-daemon --stop --pidfile ${OC_PIDFILE}
+    eend $?
+}
+
