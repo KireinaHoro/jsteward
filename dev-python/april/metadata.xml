@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<upstream>
+		<bugs-to>https://github.com/cosven/april/issues</bugs-to>
+	</upstream>
+	<maintainer type="project">
+		<email>python@gentoo.org</email>
+	</maintainer>
+	<maintainer type="person">
+		<email>i@jsteward.moe</email>
+		<name>KireinaHoro</name>
+	</maintainer>
+	<longdescription lang="en">
+		april do following things:
+
+			simple type validation
+			python object serialization and data deserialization
+	</longdescription>
+</pkgmetadata>
