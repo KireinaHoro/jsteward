@@ -3,7 +3,7 @@
 
 EAPI=6
 
-PYTHON_COMPAT=( python3_{4,5,6} )
+PYTHON_COMPAT=( python3_{4,5} )
 inherit distutils-r1 eutils
 
 DESCRIPTION="A hackable music player for Netease Cloud Music"
@@ -28,8 +28,8 @@ DEPEND="
 	dev-qt/qtwebkit:5
 	media-libs/gst-plugins-bad:1.0
 	media-libs/gst-plugins-good:1.0
-	media-libs/gst-plugins-soup:1.0
 	media-libs/gst-plugins-ugly:1.0
+	media-plugins/gst-plugins-soup:1.0
 "
 RDEPEND="${DEPEND}
 "
