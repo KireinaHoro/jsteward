@@ -3,8 +3,7 @@
 
 EAPI=6
 
-PYTHON_COMPAT=( python3_4 )
-DISTUTILS_SINGLE_IMPL=1
+PYTHON_COMPAT=( python3_{4,5} )
 inherit distutils-r1
 
 DESCRIPTION="Extensible music player with batteries included"
