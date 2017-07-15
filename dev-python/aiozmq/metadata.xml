@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<upstream>
+		<bugs-to>https://github.com/aio-libs/aiozmq/issues</bugs-to>
+		<doc>http://aiozmq.readthedocs.org/</doc>
+	</upstream>
+	<maintainer type="project">
+		<email>python@gentoo.org</email>
+	</maintainer>
+	<maintainer type="person">
+		<email>i@jsteward.moe</email>
+		<name>KireinaHoro</name>
+	</maintainer>
+	<longdescription lang="en">
+		The difference between aiozmq and vanilla pyzmq (zmq.asyncio).
+
+		zmq.asyncio works only by replacement event loop with custom one. This approach works but have two disadvantages:
+
+			zmq.asyncio.ZMQEventLoop cannot be combined with other loop implementations (most notable is ultra fast uvloop).
+
+			It uses internal ZMQ Poller which has fast ZMQ Sockets support but doesn't intended to work fast with many (thousands) regular TCP sockets.
+	</longdescription>
+</pkgmetadata>
