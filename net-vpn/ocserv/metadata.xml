@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<upstream>
+		<bugs-to>https://gitlab.com/ocserv/ocserv/issues</bugs-to>
+		<changelog>http://ocserv.gitlab.io/www/changelog.html</changelog>
+		<doc>http://ocserv.gitlab.io/www/manual.html</doc>
+	</upstream>
+	<maintainer type="person">
+		<email>i@jsteward.moe</email>
+		<name>KireinaHoro</name>
+	</maintainer>
+	<longdescription lang="en">
+		 OpenConnect server (ocserv) is an SSL VPN server. Its purpose is to be a secure, small, fast and configurable VPN server. It implements the OpenConnect SSL VPN protocol, and has also (currently experimental) compatibility with clients using the AnyConnect SSL VPN protocol. The OpenConnect protocol provides a dual TCP/UDP VPN channel, and uses the standard IETF security protocols to secure it. The server is implemented primarily for the GNU/Linux platform but its code is designed to be portable to other UNIX variants as well. 
+	</longdescription>
+	<use>
+		<flag name="lz4">Enable support for LZ4 compression using <pkg>app-arch/lz4</pkg></flag>
+		<flag name="gssapi">Enable GSSAPI support</flag>
+		<flag name="oath">Enable OTP support</flag>
+		<flag name="anyconnect-compat">Enable AnyConnect client compatibility</flag>
+	</use>
+</pkgmetadata>
