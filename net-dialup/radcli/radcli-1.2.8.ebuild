@@ -9,23 +9,25 @@ DESCRIPTION="A simple RADIUS client library"
 HOMEPAGE="http://radcli.github.io/radcli/"
 SRC_URI="https://github.com/radcli/radcli/releases/download/${PV}/${P}.tar.gz"
 
-LICENSE=""
+LICENSE="radcli"
 SLOT="0"
 KEYWORDS="~x86"
 IUSE="+nettle"
 
-DEPEND="
-	dev-util/abi-compliance-checker
+CDEPEND="
 	net-libs/gnutls
+	nettle? ( dev-libs/nettle )
+"
+DEPEND="${CDEPEND}
+	dev-util/abi-compliance-checker
 	sys-devel/autoconf
 	sys-devel/automake
 	sys-devel/libtool
-	nettle? ( dev-libs/nettle )
 "
-RDEPEND="${DEPEND}"
+RDEPEND="${CEPEND}"
 
 src_prepare() {
-	eautoreconf	
+	eautoreconf
 	default
 }
 
