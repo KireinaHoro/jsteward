@@ -29,7 +29,7 @@ RDEPEND="
 	>=dev-python/python-levenshtein-0.12.0[${PYTHON_USEDEP}]
 	>=dev-python/requests-2.13.0[${PYTHON_USEDEP}]
 	>=media-libs/mutagen-1.37[${PYTHON_USEDEP}]
-	media-video/mpv[libmpv]
+	>=media-video/mpv-0.18.1[libmpv]
 "
 DEPEND="${RDEPEND}
 	dev-python/pytest-runner[${PYTHON_USEDEP}]
