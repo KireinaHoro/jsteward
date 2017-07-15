@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<upstream>
+		<bugs-to>https://github.com/harvimt/quamash/issues</bugs-to>
+		<changelog>https://github.com/harvimt/quamash</changelog>
+	</upstream>
+	<maintainer type="project">
+		<email>python@gentoo.org</email>
+	</maintainer>
+	<maintainer type="person">
+		<email>i@jsteward.moe</email>
+		<name>KireinaHoro</name>
+	</maintainer>
+	<longdescription lang="en">
+	</longdescription>
+</pkgmetadata>
