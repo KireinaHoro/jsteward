@@ -8,7 +8,7 @@ DESCRIPTION="Automatic script to start shadowsocks-redir and configure routing t
 HOMEPAGE="https://github.com/KireinaHoro/shadowsocks-auto-redir.sh"
 
 MY_PN="${PN}.sh"
-MY_PV="0.1.0"
+MY_PV="0.1.0_p1"
 SRC_URI="https://github.com/KireinaHoro/${MY_PN}/archive/v${MY_PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
