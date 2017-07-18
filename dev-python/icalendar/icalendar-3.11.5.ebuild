@@ -20,12 +20,12 @@ IUSE="doc test"
 DOCS="README.rst"
 
 RDEPEND="dev-python/pytz[${PYTHON_USEDEP}]
+		dev-python/python-dateutil[${PYTHON_USEDEP}]
 		dev-python/setuptools[${PYTHON_USEDEP}]"
 DEPEND="${RDEPEND}
 	doc? ( dev-python/sphinx[${PYTHON_USEDEP}] )
 	test? (	dev-python/python-dateutil:0[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
-		dev-python/python-dateutil[${PYTHON_USEDEP}]
 		dev-python/pytz[${PYTHON_USEDEP}]
 		dev-python/coverage[${PYTHON_USEDEP}] )"
 
