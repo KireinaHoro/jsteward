@@ -29,21 +29,25 @@ pkg_setup() {
 	get_version
 	CONFIG_CHECK="${CONFIG_CHECK} NETFILTER_XT_TARGET_REDIRECT"
 	ERROR_NETFILTER_XT_TARGET_REDIRECT="v2ray-redir requires config NETFILTER_XT_TARGET_REDIRECT"
+	CONFIG_CHECK="${CONFIG_CHECK} IP_NF_NAT"
+	ERROR_NETFILTER_XT_TARGET_REDIRECT="v2ray-redir requires config IP_NF_NAT"
+	CONFIG_CHECK="${CONFIG_CHECK} IP6_NF_NAT"
+	ERROR_NETFILTER_XT_TARGET_REDIRECT="v2ray-redir requires config IP6_NF_NAT"
 	CONFIG_CHECK="${CONFIG_CHECK} IP6_NF_IPTABLES"
 	ERROR_IP6_NF_TABLES="v2ray-redir requires config IP6_NF_IPTABLES"
 }
 
 src_install() {
-	insinto /usr/lib/v2ray-redir
+	insinto /usr/lib/${PN}
 	doins routing
-	fperms 0755 /usr/lib/v2ray-redir/routing
+	fperms 0755 /usr/lib/${PN}/routing
 
-	doinitd openrc/v2ray-redir
+	doinitd openrc/${PN}
 
 	systemd_dounit "systemd/v2ray-redir.service"
-	systemd_dounit "systemd/v2ray.service.d"
+	systemd_dounit -r "systemd/v2ray.service.d"
 
-	DOCS="README.md"
+	DOCS=(README.md)
 	einstalldocs
 }
 
