@@ -24,7 +24,6 @@ RDEPEND="${CDEPEND}
 		net-proxy/v2ray-bin
 	)
 "
-S="${WORKDIR}/${MY_PN}-${MY_PV}"
 
 pkg_setup() {
 	get_version
