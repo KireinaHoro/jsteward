@@ -34,8 +34,9 @@ pkg_setup() {
 }
 
 src_install() {
+	mkdir -p /usr/lib/"${PN}"
 	insinto /usr/lib/"${PN}"
-	doins -r routing
+	doins "${S}"/routing
 	fperms 0755 /usr/lib/"${PN}"/routing
 
 	doinitd openrc/v2ray-redir
