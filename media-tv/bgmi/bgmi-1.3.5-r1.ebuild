@@ -3,7 +3,7 @@
 
 EAPI=6
 
-PYTHON_COMPAT=( python2_7 python3_{4,5} )
+PYTHON_COMPAT=( python2_7 python3_6 )
 inherit distutils-r1 eutils
 
 DESCRIPTION="BGmi is a cli tool for subscribed bangumi."
