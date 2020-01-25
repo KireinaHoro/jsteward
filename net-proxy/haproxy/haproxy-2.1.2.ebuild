@@ -1,4 +1,4 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="6"
@@ -9,9 +9,9 @@ inherit user versionator toolchain-funcs flag-o-matic systemd linux-info $SCM
 MY_P="${PN}-${PV/_beta/-dev}"
 
 DESCRIPTION="A TCP/HTTP reverse proxy for high availability environments"
-HOMEPAGE="http://haproxy.1wt.eu"
+HOMEPAGE="http://www.haproxy.org"
 if [[ ${PV} != *9999 ]]; then
-	SRC_URI="http://haproxy.1wt.eu/download/$(get_version_component_range 1-2)/src/${MY_P}.tar.gz"
+	SRC_URI="${HOMEPAGE}/download/$(get_version_component_range 1-2)/src/${MY_P}.tar.gz"
 	KEYWORDS="~amd64 ~arm ~ppc ~x86 ~sparc"
 else
 	EGIT_REPO_URI="http://git.haproxy.org/git/haproxy-$(get_version_component_range 1-2).git/"
